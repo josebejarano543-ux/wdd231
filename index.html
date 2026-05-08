@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WDD 231 | Home</title>
+
+  <meta name="description" content="WDD231 course home page">
+  <meta name="author" content="Jose Alfredo Bejarano Barroso">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <img src="images/logo.svg" alt="Website Logo" width="60" height="60">
+
+  <span>Jose Alfredo Bejarano Barroso</span>
+
+  <button id="menu"></button>
+</header>
+
+<nav id="nav">
+  <a href="index.html" class="active">Home</a>
+  <a href="#">Chamber</a>
+  <a href="#">Final</a>
+</nav>
+
+<main>
+
+  <h1>Home</h1>
+
+  <section>
+    <h2>About Me</h2>
+
+    <p>
+      My name is Jose Alfredo Bejarano Barroso. I am currently studying software and web development.
+      I enjoy learning programming, web design, and technology.
+    </p>
+  </section>
+
+  <section>
+    <h2>Student Photo</h2>
+
+    <img src="images/profile.webp" alt="Student Photo" class="profile">
+  </section>
+
+  <section>
+    <h2>Web and Computer Programming Certificate</h2>
+
+    <div class="filters">
+      <button id="all">All Courses</button>
+      <button id="wdd">WDD Courses</button>
+      <button id="cse">CSE Courses</button>
+    </div>
+
+    <div id="courses"></div>
+
+    <p>Total Credits: <span id="totalCredits"></span></p>
+  </section>
+
+</main>
+
+<footer>
+
+  <div class="social">
+    <a href="https://github.com/josebejarano543-ux" target="_blank">GitHub</a>
+
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+  </div>
+
+  <p>
+    &copy;
+    <span id="currentyear"></span>
+    Jose Alfredo Bejarano Barroso | Utah, USA
+  </p>
+
+  <p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
