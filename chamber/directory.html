@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orem Chamber of Commerce Directory</title>
+  <meta name="description" content="Business directory page for the Orem Chamber of Commerce website project.">
+  <meta name="author" content="Jose Alfredo Bejarano Barroso">
+
+  <meta property="og:title" content="Orem Chamber of Commerce Directory">
+  <meta property="og:description" content="Explore local businesses and members of the Orem Chamber of Commerce.">
+  <meta property="og:image" content="https://josebejarano543-ux.github.io/wdd231/chamber/images/og-image.webp">
+  <meta property="og:url" content="https://josebejarano543-ux.github.io/wdd231/chamber/directory.html">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-area">
+      <img src="images/logo.webp" alt="Orem Chamber logo">
+      <span>Orem Chamber of Commerce</span>
+    </div>
+
+    <button id="menu" aria-label="Open navigation menu"></button>
+
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="directory.html" class="active">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="discover.html">Discover</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Business Directory</h1>
+
+    <section class="view-buttons">
+      <button id="grid">Grid View</button>
+      <button id="list">List View</button>
+    </section>
+
+    <section id="members" class="grid"></section>
+  </main>
+
+  <footer>
+    <div>
+      <p><strong>Orem Chamber of Commerce</strong></p>
+      <p>123 Center Street, Orem, Utah</p>
+      <p>info@oremchamber.org</p>
+      <p>(801) 555-1234</p>
+    </div>
+
+    <div>
+      <p>Jose Alfredo Bejarano Barroso</p>
+      <p>WDD 231</p>
+      <p>&copy; <span id="currentyear"></span> Orem Chamber of Commerce</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

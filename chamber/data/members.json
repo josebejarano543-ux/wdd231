@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Mountain View Auto",
+    "address": "245 State Street, Orem, UT",
+    "phone": "(801) 555-1001",
+    "website": "https://example.com",
+    "image": "mountain-view-auto.webp",
+    "membership": 3,
+    "info": "Used car sales and vehicle inspection services."
+  },
+  {
+    "name": "Orem Family Dental",
+    "address": "88 Center Street, Orem, UT",
+    "phone": "(801) 555-1002",
+    "website": "https://example.com",
+    "image": "orem-family-dental.webp",
+    "membership": 2,
+    "info": "Family dental care and cosmetic dentistry."
+  },
+  {
+    "name": "Utah Valley Tech",
+    "address": "412 University Parkway, Orem, UT",
+    "phone": "(801) 555-1003",
+    "website": "https://example.com",
+    "image": "utah-valley-tech.webp",
+    "membership": 3,
+    "info": "Technology services and web development."
+  },
+  {
+    "name": "Canyon Coffee House",
+    "address": "95 Main Street, Orem, UT",
+    "phone": "(801) 555-1004",
+    "website": "https://example.com",
+    "image": "canyon-coffee.webp",
+    "membership": 1,
+    "info": "Local coffee shop and community meeting space."
+  },
+  {
+    "name": "Provo River Fitness",
+    "address": "701 Geneva Road, Orem, UT",
+    "phone": "(801) 555-1005",
+    "website": "https://example.com",
+    "image": "provo-river-fitness.webp",
+    "membership": 2,
+    "info": "Fitness center with personal training programs."
+  },
+  {
+    "name": "Beehive Marketing",
+    "address": "330 800 North, Orem, UT",
+    "phone": "(801) 555-1006",
+    "website": "https://example.com",
+    "image": "beehive-marketing.webp",
+    "membership": 1,
+    "info": "Digital marketing and branding services."
+  },
+  {
+    "name": "Wasatch Home Repair",
+    "address": "560 1200 West, Orem, UT",
+    "phone": "(801) 555-1007",
+    "website": "https://example.com",
+    "image": "wasatch-home-repair.webp",
+    "membership": 2,
+    "info": "Home repair, maintenance, and remodeling services."
+  }
+]

@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+  header {
+    grid-template-columns: auto 1fr;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: auto;
+    margin-top: 0;
+  }
+
+  nav a {
+    padding: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .list .member-card {
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    align-items: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+  }
+}
