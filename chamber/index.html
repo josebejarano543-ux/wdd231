@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Orem Chamber of Commerce</title>
+
+  <meta name="description" content="Home page for the Orem Chamber of Commerce website project.">
+  <meta name="author" content="Jose Alfredo Bejarano Barroso">
+
+  <meta property="og:title" content="Orem Chamber of Commerce">
+  <meta property="og:description" content="Supporting local businesses and strengthening the community.">
+  <meta property="og:image" content="https://josebejarano543-ux.github.io/wdd231/chamber/images/og-image.webp">
+  <meta property="og:url" content="https://josebejarano543-ux.github.io/wdd231/chamber/index.html">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <div class="logo-area">
+    <img src="images/logo.webp" alt="Orem Chamber Logo">
+    <span>Orem Chamber of Commerce</span>
+  </div>
+
+  <button id="menu"></button>
+
+  <nav id="navMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="directory.html">Directory</a>
+    <a href="join.html">Join</a>
+    <a href="discover.html">Discover</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <img src="images/hero.webp" alt="Orem Utah">
+
+    <div class="hero-text">
+      <h1>Welcome to the Orem Chamber of Commerce</h1>
+
+      <p>
+        Connecting local businesses and building a stronger community.
+      </p>
+
+      <a href="join.html" class="cta-button">
+        Join the Chamber
+      </a>
+    </div>
+  </section>
+
+  <section class="home-grid">
+
+    <section class="events-card">
+      <h2>Current Events</h2>
+
+      <p>
+        <strong>Business Networking Breakfast</strong>
+      </p>
+
+      <p>
+        Friday at 8:00 AM at the Orem Conference Center.
+      </p>
+
+      <p>
+        <strong>Small Business Workshop</strong>
+      </p>
+
+      <p>
+        Learn marketing strategies for local businesses.
+      </p>
+    </section>
+
+    <section class="weather-card">
+      <h2>Weather</h2>
+
+      <p>
+        Current Temperature:
+        <span id="current-temp">Loading...</span>
+      </p>
+
+      <p>
+        Weather:
+        <span id="weather-desc">Loading...</span>
+      </p>
+
+      <h3>3-Day Forecast</h3>
+
+      <div id="forecast"></div>
+    </section>
+
+  </section>
+
+  <section class="spotlights-section">
+
+    <h2>Company Spotlights</h2>
+
+    <div id="spotlights" class="spotlights"></div>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <div>
+    <p><strong>Orem Chamber of Commerce</strong></p>
+    <p>123 Center Street, Orem, Utah</p>
+    <p>info@oremchamber.org</p>
+    <p>(801) 555-1234</p>
+  </div>
+
+  <div>
+    <p>Jose Alfredo Bejarano Barroso</p>
+    <p>WDD 231</p>
+
+    <p>
+      &copy;
+      <span id="currentyear"></span>
+      Orem Chamber of Commerce
+    </p>
+
+    <p>
+      Last Modification:
+      <span id="lastModified"></span>
+    </p>
+  </div>
+
+</footer>
+
+</body>
+</html>
