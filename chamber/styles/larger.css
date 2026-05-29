@@ -34,20 +34,15 @@
     text-align: left;
   }
 
-  /* HERO */
-
   .hero {
     min-height: 500px;
   }
 
   .hero-text {
-    position: relative;
-    z-index: 1;
+    width: 70%;
     max-width: 600px;
     padding: 2rem;
   }
-
-  /* HOME PAGE */
 
   .home-grid {
     grid-template-columns: 2fr 1fr;
@@ -56,8 +51,6 @@
   .spotlights {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  /* JOIN PAGE */
 
   .join-layout {
     grid-template-columns: 2fr 1fr;
