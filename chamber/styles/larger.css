@@ -57,3 +57,29 @@
     align-items: start;
   }
 }
+@media screen and (min-width: 641px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card4 card5 card5 card6"
+      "card7 card8 card8 card6";
+  }
+
+  .discover-card img:hover {
+    filter: brightness(75%);
+    transform: scale(1.03);
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+}
