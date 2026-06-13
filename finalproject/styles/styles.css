@@ -363,3 +363,173 @@ footer p {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/* Premium Contact Page */
+.contact-layout {
+  margin-top: 2rem;
+}
+
+.contact-form,
+.contact-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(124, 130, 107, 0.25);
+  box-shadow: 0 28px 70px rgba(31, 35, 38, 0.16);
+}
+
+.contact-form {
+  position: relative;
+}
+
+.contact-form::before {
+  content: "Reservation Inquiry";
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 1.5rem;
+}
+
+.contact-card {
+  background:
+    linear-gradient(rgba(31,35,38,.82), rgba(31,35,38,.82)),
+    url("https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=900&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.contact-card h2,
+.contact-card p,
+.contact-card strong {
+  color: white;
+}
+
+.contact-card h2 {
+  font-size: 2rem;
+}
+
+input,
+textarea {
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--sage);
+  box-shadow: 0 0 0 4px rgba(124,130,107,.18);
+}
+
+.contact-form .button {
+  width: 100%;
+  margin-top: .5rem;
+}
+.page-title h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem) !important;
+  margin-bottom: .5rem;
+}
+
+.page-title p {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+/* Premium Hero Logo */
+
+.hero-logo {
+  display: block !important;
+  width: 450px !important;
+  height: auto !important;
+  margin-bottom: 2rem !important;
+  opacity: 1 !important;
+
+  filter:
+    brightness(2.5)
+    contrast(1.5)
+    drop-shadow(0 0 20px rgba(255,255,255,.7))
+    drop-shadow(0 0 40px rgba(255,255,255,.4));
+}
+
+.hero-text {
+  max-width: 700px;
+}
+/* Navbar Logo */
+.navbar .logo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 220px !important;
+  height: 60px !important;
+}
+
+.navbar .logo img {
+  width: 190px;
+  height: auto;
+  display: block;
+  filter: brightness(2.3) contrast(1.4);
+}
+
+/* Hero Logo */
+.hero-logo {
+  display: block !important;
+  width: 330px !important;
+  height: auto !important;
+  margin-bottom: 1.5rem !important;
+  opacity: 1 !important;
+  filter:
+    brightness(2.5)
+    contrast(1.5)
+    drop-shadow(0 0 20px rgba(255,255,255,.7));
+}
+/* ===== FIX NAVBAR OVERLAP ===== */
+
+.hero {
+  padding-top: 10rem !important;
+}
+
+.page-title {
+  margin-top: 8rem !important;
+}
+
+.intro {
+  margin-top: 3rem !important;
+}
+
+/* ===== SMALLER NAVBAR ===== */
+
+.navbar {
+  padding: 0.45rem 1rem !important;
+  min-height: 70px !important;
+}
+
+.navbar .logo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 150px !important;
+  height: 50px !important;
+}
+
+.navbar .logo img {
+  width: 180px !important;
+  height: auto !important;
+  display: block !important;
+  filter: brightness(2.3) contrast(1.4);
+}
+
+/* ===== CLEAN PAGE TITLES ===== */
+
+.page-title h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem) !important;
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+.page-title p {
+  font-size: 1.1rem !important;
+  color: var(--muted) !important;
+}
+.navbar {
+  padding: 0.45rem 1rem !important;
+  min-height: 70px !important;
+}
