@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Silver Queen Room",
+    "type": "queen",
+    "price": 89,
+    "beds": "1 Queen Bed",
+    "capacity": "2 Guests",
+    "amenities": ["Free WiFi", "Smart TV", "Mini Fridge", "Air Conditioning"],
+    "description": "A comfortable queen room designed for solo travelers or couples visiting Duchesne.",
+    "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Sage Queen Room",
+    "type": "queen",
+    "price": 94,
+    "beds": "1 Queen Bed",
+    "capacity": "2 Guests",
+    "amenities": ["Free WiFi", "Desk", "Microwave", "Coffee Maker"],
+    "description": "A peaceful queen room with simple amenities for a relaxing overnight stay.",
+    "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Classic Queen Room",
+    "type": "queen",
+    "price": 99,
+    "beds": "1 Queen Bed",
+    "capacity": "2 Guests",
+    "amenities": ["Free Parking", "Smart TV", "Mini Fridge", "Private Bathroom"],
+    "description": "A clean and practical room for travelers looking for comfort and value.",
+    "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Double Queen Standard",
+    "type": "double",
+    "price": 119,
+    "beds": "2 Queen Beds",
+    "capacity": "4 Guests",
+    "amenities": ["Free WiFi", "Smart TV", "Microwave", "Mini Fridge"],
+    "description": "A great option for families or small groups traveling together.",
+    "image": "https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Double Queen Comfort",
+    "type": "double",
+    "price": 129,
+    "beds": "2 Queen Beds",
+    "capacity": "4 Guests",
+    "amenities": ["Free Parking", "Air Conditioning", "Coffee Maker", "Smart TV"],
+    "description": "A spacious double queen room with everything needed for a comfortable stay.",
+    "image": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Family Double Queen",
+    "type": "double",
+    "price": 139,
+    "beds": "2 Queen Beds",
+    "capacity": "5 Guests",
+    "amenities": ["Free WiFi", "Extra Seating", "Mini Fridge", "Private Bathroom"],
+    "description": "A family-friendly room with extra space for longer road trips.",
+    "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Charcoal King Room",
+    "type": "king",
+    "price": 129,
+    "beds": "1 King Bed",
+    "capacity": "2 Guests",
+    "amenities": ["King Bed", "Smart TV", "Desk", "Coffee Maker"],
+    "description": "A premium king room with a calm and modern atmosphere.",
+    "image": "https://images.unsplash.com/photo-1605346434674-a440ca4dc4c0?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Mountain King Room",
+    "type": "king",
+    "price": 135,
+    "beds": "1 King Bed",
+    "capacity": "2 Guests",
+    "amenities": ["Free WiFi", "Mini Fridge", "Air Conditioning", "Private Bathroom"],
+    "description": "A relaxing king room inspired by Utah mountain views and open skies.",
+    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 9,
+    "name": "Executive King Room",
+    "type": "king",
+    "price": 149,
+    "beds": "1 King Bed",
+    "capacity": "2 Guests",
+    "amenities": ["Work Desk", "Fast WiFi", "Smart TV", "Coffee Maker"],
+    "description": "A great choice for business travelers who need comfort and productivity.",
+    "image": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 10,
+    "name": "Sage Studio Suite",
+    "type": "suite",
+    "price": 159,
+    "beds": "1 King Bed",
+    "capacity": "3 Guests",
+    "amenities": ["Kitchenette", "Smart TV", "Free WiFi", "Sofa"],
+    "description": "A studio suite with extra space and a kitchenette for longer stays.",
+    "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 11,
+    "name": "Silver Family Suite",
+    "type": "suite",
+    "price": 179,
+    "beds": "2 Queen Beds + Sofa",
+    "capacity": "6 Guests",
+    "amenities": ["Kitchenette", "Dining Area", "Smart TV", "Free Parking"],
+    "description": "A larger suite designed for families who want more room and convenience.",
+    "image": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 12,
+    "name": "Extended Stay Suite",
+    "type": "suite",
+    "price": 189,
+    "beds": "1 King Bed + Sofa",
+    "capacity": "4 Guests",
+    "amenities": ["Kitchen", "Laundry Access", "Desk", "Free WiFi"],
+    "description": "A practical suite for guests staying several nights in Duchesne.",
+    "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 13,
+    "name": "Traveler Queen Room",
+    "type": "queen",
+    "price": 92,
+    "beds": "1 Queen Bed",
+    "capacity": "2 Guests",
+    "amenities": ["Free WiFi", "Free Parking", "Private Bathroom", "Smart TV"],
+    "description": "A simple and reliable room for travelers passing through Utah.",
+    "image": "https://images.unsplash.com/photo-1594563703937-fdc640497dcd?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 14,
+    "name": "Road Trip Double Queen",
+    "type": "double",
+    "price": 125,
+    "beds": "2 Queen Beds",
+    "capacity": "4 Guests",
+    "amenities": ["Microwave", "Mini Fridge", "Free WiFi", "Air Conditioning"],
+    "description": "A comfortable room for road trippers, families, and outdoor travelers.",
+    "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 15,
+    "name": "Premium Sage Suite",
+    "type": "suite",
+    "price": 209,
+    "beds": "1 King Bed + 1 Queen Bed",
+    "capacity": "6 Guests",
+    "amenities": ["Full Kitchen", "Living Area", "Smart TV", "Fast WiFi"],
+    "description": "The most spacious option for guests who want comfort, privacy, and premium amenities.",
+    "image": "https://images.unsplash.com/photo-1590490359683-658d3d23f972?auto=format&fit=crop&w=900&q=80"
+  }
+]

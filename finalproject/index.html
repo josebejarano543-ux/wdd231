@@ -1,4 +1,3 @@
-cat > finalproject/index.html <<'EOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,15 +9,19 @@ cat > finalproject/index.html <<'EOF'
   <meta property="og:description" content="Comfort inspired by nature in Duchesne, Utah.">
   <meta property="og:type" content="website">
   <title>Silver Sage Motel | Home</title>
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="styles/styles.css">
   <script type="module" src="scripts/main.js"></script>
   <script type="module" src="scripts/weather.js"></script>
 </head>
+
 <body>
   <header>
     <nav class="navbar">
-      <a class="logo" href="index.html">Silver Sage</a>
+      <a class="logo text-logo" href="index.html">Silver Sage</a>
+
       <button id="menu-button" aria-label="Open navigation menu">☰</button>
+
       <ul id="nav-menu">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="rooms.html">Rooms</a></li>
@@ -28,9 +31,10 @@ cat > finalproject/index.html <<'EOF'
 
     <section class="hero">
       <div class="hero-text">
+        <img src="images/logo-transparent.png" alt="Silver Sage Motel Logo" class="hero-logo">
         <p class="eyebrow">Duchesne, Utah</p>
         <h1>Silver Sage Motel</h1>
-        <p>Comfort Inspired by Nature</p>
+        <p>Experience comfort, nature, and hospitality in the heart of Utah.</p>
         <a class="button" href="rooms.html">Explore Rooms</a>
       </div>
     </section>
@@ -50,10 +54,12 @@ cat > finalproject/index.html <<'EOF'
         <h3>Comfortable Rooms</h3>
         <p>Clean rooms with practical amenities for families, workers, and travelers.</p>
       </article>
+
       <article>
         <h3>Nature Inspired</h3>
         <p>A calm design inspired by Utah landscapes, sagebrush, and open skies.</p>
       </article>
+
       <article>
         <h3>Easy Reservation</h3>
         <p>Visitors can request information or start a reservation through the contact form.</p>
@@ -76,9 +82,12 @@ cat > finalproject/index.html <<'EOF'
 
   <footer>
     <p>&copy; <span id="year"></span> Silver Sage Motel | Jose Bejarano</p>
-    <p><a href="attributions.html">Attributions</a> | <a href="siteplan.html">Site Plan</a> | <a href="#">Video Demo</a></p>
+    <p>
+      <a href="attributions.html">Attributions</a> |
+      <a href="siteplan.html">Site Plan</a> |
+      <a href="#">Video Demo</a>
+    </p>
     <p id="visit-message"></p>
   </footer>
 </body>
 </html>
-EOF
