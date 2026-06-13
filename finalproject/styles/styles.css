@@ -1,0 +1,263 @@
+:root {
+  --silver: #8a8d91;
+  --charcoal: #343a40;
+  --sage: #7c826b;
+  --warm: #f5f5f0;
+  --white: #ffffff;
+  --text: #1f2933;
+  --muted: #5f6670;
+  --shadow: rgba(20, 25, 30, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: linear-gradient(135deg, var(--warm), #ffffff, #e7e8e4);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+  color: var(--charcoal);
+}
+
+.navbar {
+  background: rgba(52, 58, 64, 0.96);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#menu-button {
+  background: var(--sage);
+  color: white;
+  border: none;
+  padding: .5rem .8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#nav-menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-menu.open {
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: .8rem;
+}
+
+.hero {
+  min-height: 70vh;
+  background:
+  linear-gradient(rgba(52,58,64,.7),rgba(52,58,64,.7)),
+  url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero h1 {
+  color: white;
+  font-size: clamp(3rem, 8vw, 6rem);
+}
+
+.button {
+  background: var(--sage);
+  color: white;
+  padding: .9rem 1.3rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.intro,
+.page-title,
+.weather-section,
+.cta,
+.confirmation-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  margin: 1rem 0;
+  box-shadow: 0 10px 25px var(--shadow);
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.cards article {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px var(--shadow);
+}
+
+.weather-card {
+  background: linear-gradient(135deg,var(--charcoal),var(--silver));
+  color: white;
+  padding: 1.5rem;
+  border-radius: 18px;
+}
+
+.room-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.room-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px var(--shadow);
+}
+
+.room-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.room-card-content {
+  padding: 1rem;
+}
+
+.room-actions {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.save-button {
+  background: var(--charcoal);
+  color: white;
+  border: none;
+  padding: .8rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.filter-box {
+  background: white;
+  padding: 1rem;
+  border-radius: 18px;
+  margin: 1rem 0;
+}
+
+.contact-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form,
+.contact-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px var(--shadow);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: .8rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+dialog {
+  border: none;
+  border-radius: 20px;
+  width: min(700px,90%);
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,.6);
+}
+
+footer {
+  background: var(--charcoal);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: white;
+}
+
+@media (min-width: 768px) {
+
+  #menu-button {
+    display: none;
+  }
+
+  #nav-menu {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .room-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .contact-layout {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (min-width: 1100px) {
+
+  .room-grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}

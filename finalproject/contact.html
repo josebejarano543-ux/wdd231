@@ -1,0 +1,87 @@
+cat > finalproject/contact.html <<'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jose Bejarano">
+  <meta name="description" content="Contact Silver Sage Motel in Duchesne, Utah and request a reservation.">
+  <meta property="og:title" content="Contact Silver Sage Motel">
+  <meta property="og:description" content="Request a stay or contact Silver Sage Motel.">
+  <meta property="og:type" content="website">
+  <title>Silver Sage Motel | Contact</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/form.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="index.html">Silver Sage</a>
+      <button id="menu-button" aria-label="Open navigation menu">☰</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">Reservation Request</p>
+      <h1>Contact Silver Sage Motel</h1>
+      <p>Send us your travel details and we will help you plan your stay in Duchesne, Utah.</p>
+    </section>
+
+    <section class="contact-layout">
+      <form method="get" action="form-action.html" class="contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="room">Preferred Room Type</label>
+        <select id="room" name="room" required>
+          <option value="">Choose a room type</option>
+          <option value="queen">Queen Room</option>
+          <option value="double">Double Queen Room</option>
+          <option value="king">King Room</option>
+          <option value="suite">Suite</option>
+        </select>
+
+        <label for="checkin">Check-in Date</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <label for="nights">Number of Nights</label>
+        <input type="number" id="nights" name="nights" min="1" max="30" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your trip..."></textarea>
+
+        <button class="button" type="submit">Send Request</button>
+      </form>
+
+      <aside class="contact-card">
+        <h2>Visit Us</h2>
+        <p><strong>Location:</strong> Duchesne, Utah</p>
+        <p><strong>Phone:</strong> (435) 555-0198</p>
+        <p><strong>Email:</strong> stays@silversagemotel.com</p>
+        <p><strong>Office Hours:</strong> 8:00 AM - 10:00 PM</p>
+        <p>This is a student project website created for WDD 231.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Silver Sage Motel | Jose Bejarano</p>
+    <p><a href="attributions.html">Attributions</a> | <a href="siteplan.html">Site Plan</a> | <a href="#">Video Demo</a></p>
+    <p id="visit-message"></p>
+  </footer>
+</body>
+</html>
+EOF

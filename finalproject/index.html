@@ -1,0 +1,84 @@
+cat > finalproject/index.html <<'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jose Bejarano">
+  <meta name="description" content="Silver Sage Motel in Duchesne, Utah offers comfortable rooms, modern amenities, and a welcoming place to stay.">
+  <meta property="og:title" content="Silver Sage Motel">
+  <meta property="og:description" content="Comfort inspired by nature in Duchesne, Utah.">
+  <meta property="og:type" content="website">
+  <title>Silver Sage Motel | Home</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/weather.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="index.html">Silver Sage</a>
+      <button id="menu-button" aria-label="Open navigation menu">☰</button>
+      <ul id="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Duchesne, Utah</p>
+        <h1>Silver Sage Motel</h1>
+        <p>Comfort Inspired by Nature</p>
+        <a class="button" href="rooms.html">Explore Rooms</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>A Modern Stay in the Heart of Utah</h2>
+      <p>
+        Silver Sage Motel is designed for travelers who want comfort, cleanliness,
+        safety, and a peaceful place to rest while visiting Duchesne, Utah.
+      </p>
+    </section>
+
+    <section class="cards">
+      <article>
+        <h3>Comfortable Rooms</h3>
+        <p>Clean rooms with practical amenities for families, workers, and travelers.</p>
+      </article>
+      <article>
+        <h3>Nature Inspired</h3>
+        <p>A calm design inspired by Utah landscapes, sagebrush, and open skies.</p>
+      </article>
+      <article>
+        <h3>Easy Reservation</h3>
+        <p>Visitors can request information or start a reservation through the contact form.</p>
+      </article>
+    </section>
+
+    <section class="weather-section">
+      <h2>Current Weather in Duchesne</h2>
+      <div id="weather-card" class="weather-card">
+        Loading weather...
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Ready to Plan Your Stay?</h2>
+      <p>View available room options and choose the space that fits your trip.</p>
+      <a class="button" href="rooms.html">View Rooms</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Silver Sage Motel | Jose Bejarano</p>
+    <p><a href="attributions.html">Attributions</a> | <a href="siteplan.html">Site Plan</a> | <a href="#">Video Demo</a></p>
+    <p id="visit-message"></p>
+  </footer>
+</body>
+</html>
+EOF

@@ -1,0 +1,62 @@
+cat > finalproject/form-action.html <<'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jose Bejarano">
+  <meta name="description" content="Reservation request confirmation for Silver Sage Motel.">
+  <title>Silver Sage Motel | Request Received</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="index.html">Silver Sage</a>
+      <button id="menu-button" aria-label="Open navigation menu">☰</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <h1>Request Received</h1>
+      <p>Thank you for contacting Silver Sage Motel.</p>
+    </section>
+
+    <section class="confirmation-card">
+      <h2>Your Reservation Request</h2>
+      <div id="form-results"></div>
+
+      <a class="button" href="index.html">
+        Return Home
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Silver Sage Motel | Jose Bejarano</p>
+  </footer>
+
+  <script>
+    const results = document.querySelector("#form-results");
+    const params = new URLSearchParams(window.location.search);
+
+    results.innerHTML = `
+      <p><strong>Name:</strong> ${params.get("name") || "Not provided"}</p>
+      <p><strong>Email:</strong> ${params.get("email") || "Not provided"}</p>
+      <p><strong>Phone:</strong> ${params.get("phone") || "Not provided"}</p>
+      <p><strong>Room:</strong> ${params.get("room") || "Not provided"}</p>
+      <p><strong>Check-in:</strong> ${params.get("checkin") || "Not provided"}</p>
+      <p><strong>Nights:</strong> ${params.get("nights") || "Not provided"}</p>
+      <p><strong>Message:</strong> ${params.get("message") || "Not provided"}</p>
+    `;
+  </script>
+</body>
+</html>
+EOF
